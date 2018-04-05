@@ -1,0 +1,3 @@
+STEP_NO,URL,TEST_STEP_DATA,EXP_RESPONSE_CODE,EXP_CONTENT_TYPE,EXP_TEST_DATA,OPERATION
+1,http://10.44.189.138:8080/rest-assured-example/service/single-user/xml,ParameterDetails.csv,200,application/xml,TC_XML_TestData.csv,get
+2,http://10.44.189.138:8080/rest-assured-example/service/single-user/xml,,200,application/xml,,get

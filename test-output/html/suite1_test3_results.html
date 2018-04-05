@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - CreateGuestUserForFirstLogin</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>CreateGuestUserForFirstLogin</h1>
+<p>
+  Test duration: 52.156s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.advantage.tests.testLink.CreateGuestUserForFirstLogin</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  runCreateGuestUserLogin
+      </td>
+  <td class="duration">
+    19.508s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">com.advantage.datastructures.testLink.LoginDetails@193b582, [GuestUserDetails [sLoginName=testuser005, sPassword=testuser005, sRepeatPassword=testuser005, sFirstName=test, sLastName=user, sEmail=testuser005@gmail.com]]</span><br />
+    
+            <div class="testOutput">
+                        &lt;P class=&apos;testtitle&apos;&gt;<br/>
+Method runCreateGuestUserLogin executing ...<br/>
+&lt;/p&gt;<br />
+                                &lt;P class=&apos;testpassed&apos;&gt;Clicked &apos;New User link&apos; successfully&lt;/p&gt;<br />
+                                &lt;P class=&apos;testwarning&apos;&gt;Could not find element using:&nbsp; //*[@name=&apos;login&apos;]&lt;/p&gt;<br />
+                                &lt;P class=&apos;testfailed&apos;&gt;Could not find &apos;Login Name&apos; due to exception:&nbsp; java.lang.NullPointerException:&nbsp; null<br/>
+&lt;/p&gt;<br />
+                                &lt;a href=&apos;../Screenshots/Error001.png&apos; target = &apos;_blank&apos;&gt;Click here for error screenshot&lt;/a&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>com.advantage.genericexceptions.EnterFieldNoSuchElementException: Could not find &apos;Login Name&apos; due to exception:&nbsp; java.lang.NullPointerException:&nbsp; null</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.advantage.framework.Framework.enterField(Unknown Source)<br />
+              com.advantage.framework.Framework.enterField(Unknown Source)<br />
+              com.advantage.pages.testLink.FirstLogin.enterLoginName(Unknown Source)<br />
+              com.advantage.pages.testLink.FirstLogin.GuestUser(Unknown Source)<br />
+              com.advantage.tests.testLink.CreateGuestUserForFirstLogin.runCreateGuestUserLogin(Unknown Source)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

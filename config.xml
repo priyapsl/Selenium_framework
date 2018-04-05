@@ -1,0 +1,49 @@
+<config>
+	<!-- Local Only -->
+	<Fixed>
+		<AppConfig>
+			<APITesting>True</APITesting>
+			<Browser>FF</Browser>
+			<ENV>
+				<URL>http://10.44.189.117/testlink/login.php</URL>	
+				<Language></Language>
+				<DB>
+					<DBProvider>MySql</DBProvider>
+					<Server>10.222.37.38</Server>
+					<Port>3306</Port>
+					<Database>db_webdriver</Database>
+					<User>root</User>
+					<Password>root</Password>
+				</DB>
+			</ENV>
+			<ResultsPath>Results</ResultsPath>
+			<SMTPServer>mail.persistent.co.in</SMTPServer>
+			<SMTPPort>25</SMTPPort>
+			<FromEmailAddress>samidha_choudhari@persistent.co.in</FromEmailAddress>
+			<ToEmailAddress>samidha_choudhari@persistent.co.in</ToEmailAddress>	
+			<Subject>Test Execution Report</Subject>
+			<Message>test Suite execution completed - Mail without attachmnent</Message>		
+			<!--<Grid>
+				<HubURL>http://localhost:4444/wd/hub</HubURL>				
+				<Platform>WINDOWS</Platform>
+				<Version></Version>
+			</Grid>-->
+		</AppConfig>
+
+		<FrameworkConfig>
+			<TestDataPath>testdata</TestDataPath>
+			<PageTimeoutInSeconds>30</PageTimeoutInSeconds>
+			<ElementTimeoutInSeconds>30</ElementTimeoutInSeconds>
+			<PollIntervalInMilliSeconds>1000</PollIntervalInMilliSeconds>
+			<SendEmails>True</SendEmails>
+			<CaptureScreenshots>True</CaptureScreenshots>
+		</FrameworkConfig>
+
+	</Fixed>
+
+	<Custom>
+		<Tag1>aksdksd</Tag1>
+		<Tag2>aksdksd</Tag2>
+	</Custom>
+
+</config>

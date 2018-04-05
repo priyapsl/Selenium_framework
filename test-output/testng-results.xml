@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<P class='testinfo'>****************************************************************************************************</P>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testtitle'>
+Method runVerifyAPI executing ...
+</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+    </line>
+    <line>
+      <![CDATA[<P class='testinfo'>****************************************************************************************************</P>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="73354" started-at="2015-08-26T04:43:09Z" finished-at="2015-08-26T04:44:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="73354" started-at="2015-08-26T04:43:09Z" finished-at="2015-08-26T04:44:22Z">
+      <class name="com.advantage.tests.testLink.VerifyAPI">
+        <test-method status="PASS" signature="suiteInitialization(java.lang.String)[pri:0, instance:com.advantage.tests.testLink.VerifyAPI@3f0ee7cb]" name="suiteInitialization" is-config="true" duration-ms="446" started-at="2015-08-26T10:13:09Z" finished-at="2015-08-26T10:13:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[config.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteInitialization -->
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.advantage.tests.testLink.VerifyAPI@3f0ee7cb]" name="initialization" is-config="true" duration-ms="0" started-at="2015-08-26T10:13:09Z" depends-on-methods="com.advantage.framework.TestTemplate.suiteInitialization" finished-at="2015-08-26T10:13:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[config.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="testIntiation(org.testng.ITestContext)[pri:0, instance:com.advantage.tests.testLink.VerifyAPI@3f0ee7cb]" name="testIntiation" is-config="true" duration-ms="59236" started-at="2015-08-26T10:13:09Z" finished-at="2015-08-26T10:14:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5e63cad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<P class='testinfo'>****************************************************************************************************</P>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testIntiation -->
+        <test-method status="PASS" signature="runVerifyAPI(java.util.List, java.util.List)[pri:0, instance:com.advantage.tests.testLink.VerifyAPI@3f0ee7cb]" name="runVerifyAPI" duration-ms="9486" started-at="2015-08-26T10:14:08Z" data-provider="XML" finished-at="2015-08-26T10:14:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestStepDetails [sStepNo=1, sURL=http://10.44.189.138:8080/rest-assured-example/service/single-user/xml, sTestStepData=ParameterDetails.csv, sExpResponseCode=200, sExpContentType=application/xml, sExpTestData=TC_XML_TestData.csv, sOperation=get], TestStepDetails [sStepNo=2, sURL=http://10.44.189.138:8080/rest-assured-example/service/single-user/xml, sTestStepData=, sExpResponseCode=200, sExpContentType=application/xml, sExpTestData=TC_XML_TestData.csv, sOperation=get]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestDataDetails [sEmailTag=tag=email&test@hascode.com, sFirstNameTag=tag=firstName&Tim, sIdTag=tag=id&1, sLastNameTag=tag=lastName&Testerman]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<P class='testtitle'>
+Method runVerifyAPI executing ...
+</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct response code as - 200</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>API generated correct content type as - application/xml</p>]]>
+            </line>
+            <line>
+              <![CDATA[<P class='testpassed'>XML tag verification done successfully and all tags has correct attribute values</p>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runVerifyAPI -->
+        <test-method status="PASS" signature="testEnd()[pri:0, instance:com.advantage.tests.testLink.VerifyAPI@3f0ee7cb]" name="testEnd" is-config="true" duration-ms="4551" started-at="2015-08-26T10:14:18Z" finished-at="2015-08-26T10:14:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<P class='testinfo'>****************************************************************************************************</P>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testEnd -->
+        <test-method status="PASS" signature="suiteEnd()[pri:0, instance:com.advantage.tests.testLink.VerifyAPI@3f0ee7cb]" name="suiteEnd" is-config="true" duration-ms="1" started-at="2015-08-26T10:14:23Z" finished-at="2015-08-26T10:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteEnd -->
+      </class> <!-- com.advantage.tests.testLink.VerifyAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

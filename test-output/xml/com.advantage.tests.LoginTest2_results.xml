@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuiteIntiation"
+           tests="3"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="68.121">
+  <properties />
+            <testcase name="runLoginPositiveFlow" time="32.358" classname="com.advantage.tests.LoginTest2">
+                <failure type="com.advantage.genericexceptions.WrongPageException"
+                  message="Not at Login page (must contain &apos;/Login.html&apos;)  URL:  http://ppud9050:8080/upm/error/LoginFailed.html?cppt=8
+"
+              >
+<![CDATA[com.advantage.genericexceptions.WrongPageException: Not at Login page (must contain '/Login.html')  URL:  http://ppud9050:8080/upm/error/LoginFailed.html?cppt=8
+
+  com.advantage.framework.Framework.initialize(Framework.java:139)
+  com.advantage.pages.Login.<init>(Login.java:45)
+  com.advantage.pages.Navigation.clickLogout(Navigation.java:67)
+  com.advantage.tests.LoginTest2.runLoginPositiveFlow(LoginTest2.java:184)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$0(SuiteRunner.java:333)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="runLoginPositiveFlow" time="33.545" classname="com.advantage.tests.LoginTest2">
+                <failure type="com.advantage.genericexceptions.WrongPageException"
+                  message="Not at Login page (must contain &apos;/Login.html&apos;)  URL:  http://ppud9050:8080/upm/error/LoginFailed.html?cppt=7
+"
+              >
+<![CDATA[com.advantage.genericexceptions.WrongPageException: Not at Login page (must contain '/Login.html')  URL:  http://ppud9050:8080/upm/error/LoginFailed.html?cppt=7
+
+  com.advantage.framework.Framework.initialize(Framework.java:139)
+  com.advantage.pages.Login.<init>(Login.java:45)
+  com.advantage.pages.Navigation.clickLogout(Navigation.java:67)
+  com.advantage.tests.LoginTest2.runLoginPositiveFlow(LoginTest2.java:184)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$0(SuiteRunner.java:333)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="runPasswordBlankFlow" time="2.218" classname="com.advantage.tests.LoginTest2" />
+      
+</testsuite>

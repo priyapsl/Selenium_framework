@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [logintest1]" parallel="tests">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="TestSuiteIntiation(failed)" parallel="tests">
+    <classes>
+      <class name="com.advantage.tests.LoginTest1">
+        <methods>
+          <include name="suiteInitialization"/>
+          <include name="initialization"/>
+          <include name="runLoginPositiveFlow" invocation-numbers="0 1"/>
+          <include name="suiteEnd"/>
+          <include name="testEnd"/>
+          <include name="testIntiation"/>
+        </methods>
+      </class> <!-- com.advantage.tests.LoginTest1 -->
+    </classes>
+  </test> <!-- TestSuiteIntiation(failed) -->
+</suite> <!-- Failed suite [logintest1] -->

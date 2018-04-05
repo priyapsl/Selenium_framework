@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Advantage Test" default="clean" basedir=".">
+
+	<description>Project: Advantage: Testing</description>
+
+	<path id="build.classpath">
+		<fileset dir="./lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="." path="./bin" />
+	</path>
+
+	<tstamp> 
+	    <format property="TODAY" pattern="yyyy-MM-dd-hh-mm" locale="en"/> 
+	</tstamp> 
+	
+	<!--<property name="results.path" location="./TestResults-${TODAY}" />-->
+	<property name="results.path" location="./Results/TestResults-${TODAY}" />
+
+	<target name="clean" description="Clean out binaries and delete old screenshots">
+		<delete dir="./bin" />
+		<!--<delete dir="./TestResults" />-->
+		<!--<delete dir="./Result/TestResults" />
+		<delete>
+			<fileset dir="." includes="**/*.html" />
+		</delete>-->
+	</target>
+
+	<target name="build" description="Compile Code" depends="clean">
+		<mkdir dir="./bin" />
+		<mkdir dir="${results.path}" />
+		<javac srcdir="./src" destdir="./bin" classpathref="build.classpath" encoding="cp1252" debug="off" source="1.6" />
+	</target>
+	
+	
+		
+	<!--<target name="start-hub" description="Start the Selenium Grid hub" depends="build">
+		<java classpathref="build.classpath"
+	      jar="./lib/selenium-server-standalone-2.29.0.jar" 
+	      fork="true"
+	      spawn="true">
+	      <arg value="-v" />
+	      <arg value="-role" />
+	      <arg value="hub" />
+	   	</java>
+	</target>
+	
+	
+	<target name="start-node" 
+	   description="Start the Selenium Grid node"
+	   depends="start-hub">
+		<java classpathref="build.classpath"
+	      jar="./lib/selenium-server-standalone-2.29.0.jar"
+	      fork="true"
+	      spawn="true">
+	      <arg value="-role" />
+	      <arg value="webdriver" />
+	      <arg value="-hub" />
+	      <arg value="http://localhost:4444/grid/register" />
+	      <arg value="-port" />
+	      <arg value="5555" />
+		  <arg value="-browser" />
+	      <arg value="browserName=firefox,version=13.0,maxInstances=5,platform=WINDOWS"/>
+	  </java>			
+	</target> -->
+	
+	<scriptdef language="javascript" manager="javax"
+		 name="random">
+		 <attribute name="max"/>
+		 <attribute name="property"/>
+		var max=attributes.get("max")
+		var property=attributes.get("property")
+		if(max==null || property==null) {
+		 self.fail("'property' or 'max' is not set")
+		} else { 
+		 var testrunid=java.util.Random().nextInt(max) 
+		 self.log("Generated random number " + testrunid)
+		 project.setNewProperty(property, testrunid);
+		}
+		</scriptdef>
+		
+		<target name="testrunid">
+			
+		 <random max="99999" property="testrunid"/>
+		 <echo>Random number is ${testrunid}</echo>
+		</target>
+	
+	
+
+	<property name="testng.path" location="./lib/testng-6.9.6.jar" />
+	<taskdef resource="testngtasks" classpath="${testng.path}" />
+	<target name="smoketest" depends="build ">
+		<testng classpathref="build.classpath" haltOnFailure="false" verbose="2" delegateCommandSystemProperties="true" outputdir = "${results.path}" useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter,com.advantage.reporting.DotTestListener">
+			<sysproperty key="org.uncommons.reportng.stylesheet" value="./reportngcss.css"/>
+			<sysproperty key="org.uncommons.reportng.title" value="Advantage Test Execution Report" />
+			<sysproperty key="org.uncommons.reportng.escape-output" value="false" />
+			<sysproperty key="org.uncommons.reportng.outputDirectory" value="${results.path}" />
+			<!--<sysproperty key="testrunid" value="${testrunid}" />-->
+			<xmlfileset dir="./testsuites/" includes="TestLink.xml" />			
+		</testng>
+	</target>
+	<!-- Open the report in browser.-->
+		<target name="openReport">
+			<exec executable="C:\Program Files\Internet Explorer\iexplore.exe" spawn="yes">
+			<arg line="'${results.path}\html\index.html'" />
+			</exec>
+		</target>
+
+</project>

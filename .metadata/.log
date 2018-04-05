@@ -1,0 +1,22 @@
+!SESSION 2014-03-07 10:01:19.835 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data D:\BQA_Practice\Workspace\advantage -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-03-07 10:02:32.864
+!MESSAGE Could not load repository template extension contributed by org.sonar.ide.eclipse.mylyn.ui with connectorKind jira
+
+!ENTRY org.eclipse.core.net 1 0 2014-03-07 10:03:04.318
+!MESSAGE System property http.proxyHost is set to ngproxy.persistent.co.in but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2014-03-07 10:03:04.319
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2014-03-07 10:03:04.328
+!MESSAGE System property http.proxyHost is set to ngproxy.persistent.co.in but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2014-03-07 10:03:04.328
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.

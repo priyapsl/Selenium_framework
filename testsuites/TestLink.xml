@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="TestLink"  verbose ="1" parallel="tests" thread-count="1">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<!--<test name="InvalidTestlinkLogin">
+		<classes>	
+			<class name="com.advantage.tests.testLink.InvalidTestlinkLogin" />						
+		</classes>
+	</test>-->
+	
+	<!-- <test name="CreateNewUser">
+		<classes>	
+			<class name="com.advantage.tests.testLink.CreateNewUserTest" />						
+		</classes>
+	</test> 
+	<test name="CreateGuestUserForFirstLogin">
+		<classes>	
+			<class name="com.advantage.tests.testLink.CreateGuestUserForFirstLogin" />	
+		</classes>
+	</test> 
+	<test name="UpdateUserInformation">
+		<classes>					
+			<class name="com.advantage.tests.testLink.UpdateUserInformation" />		
+		</classes>
+	</test> -->
+	<test name="API">
+		<classes>	
+			<class name="com.advantage.tests.testLink.VerifyAPI" />						
+		</classes>
+	</test>	
+	
+	
+</suite>

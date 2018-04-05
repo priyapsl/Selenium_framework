@@ -1,0 +1,51 @@
+<data>
+	<NewUser>
+		<Login>
+			<UserName>samichou</UserName>
+			<Password>samichou</Password>			
+		</Login>	
+		<TestOptions>
+			<Login>testuser001</Login>
+			<FName>test</FName>
+			<LName>user</LName>
+			<Password>testuser001</Password>
+			<Email>testuser001@gmail.com</Email>
+			<Role>admin</Role>
+			<Locale>English (US)</Locale>
+			<AuthMethod>Default(DB)</AuthMethod>
+			<Active>true</Active>
+		</TestOptions>		
+	</NewUser>	
+	<FirstLogin>
+		<Login>
+			<UserName>samichou</UserName>
+			<Password>samichou</Password>			
+		</Login>
+		<TestOptions>
+			<LoginName>testuser002</LoginName>
+			<Password>testuser002</Password>
+			<RepeatPassword>testuser002</RepeatPassword>
+			<FName>test</FName>
+			<LName>user</LName>			
+			<Email>testuser002@gmail.com</Email>			
+		</TestOptions>			
+	</FirstLogin>	
+	<EditInfo>
+		<Login>
+			<UserName>testuser001</UserName>
+			<Password>testuser001</Password>			
+		</Login>
+		<TestOptions>
+			<!--EditOption - First Name, Last Name, Email, 
+			Locale, Name (To edit first and last name), Email_Locale, Change Password, Personal Data -->
+			<EditOption>Change Password</EditOption> 
+			<FName>Ftest</FName>
+			<LName>Luser</LName>			
+			<Email>testuser001@gmail.com</Email>
+			<Locale>English (wide/UK)</Locale>	
+			<OldPassword>testuser001</OldPassword>
+			<NewPassword>testuser0001</NewPassword>
+			<ConfirmPassword>testuser0001</ConfirmPassword>		
+		</TestOptions>			
+	</EditInfo>	
+</data>

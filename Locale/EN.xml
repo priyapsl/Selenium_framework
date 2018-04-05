@@ -1,0 +1,48 @@
+<root  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="trans_xsd.xsd">
+<data1>sajkad</data1>
+<data2>qiuqweuw</data2>
+<data>
+	<translate id="Login_Name">login</translate>
+	<translate id="Login_Password">tl_password</translate>
+	<translate id="Login_Button">Login</translate>
+	<translate id="New User">New User</translate>
+	<translate id="LogOut">Logout</translate>
+	<translate id="User_RolesTab">Users/Roles</translate>
+	<translate id="CreateUser_Button">doCreate</translate>
+	<translate id="NewUser_LoginName">login</translate>
+	<translate id="NewUser_FirstName">firstName</translate>
+	<translate id="NewUser_LastName">lastName</translate>
+	<translate id="NewUser_Password">password</translate>
+	<translate id="NewUser_Email">emailAddress</translate>
+	<translate id="NewUser_Role">rights_id</translate>
+	<translate id="NewUser_Locale">locale</translate>
+	<translate id="NewUser_AuthMethod">authentication</translate>
+	<translate id="NewUser_ActiveFlag">user_is_active</translate>
+	<translate id="NewUser_Save">do_update</translate>
+	<translate id="NewUser_Cancel">cancel</translate>
+	<translate id="NewUser_LoginNameIllegalCharError">The Login Name contains invalid characters!</translate>
+	<translate id="NewUser_EmailIllegalCharError">Email address format seems no good. Check domain(string after @). At least one dot (.) has to be present. Top Level Domain longer than 4 are not allowed.</translate>	
+	<translate id="NewUser_UserAlreadyExistError">Login/User name is already in use, please select another one.</translate>
+	<translate id="MySettings_FirstName">firstName</translate>	
+	<translate id="MySettings_LastName">lastName</translate>	
+	<translate id="MySettings_Email">emailAddress</translate>	
+	<translate id="MySettings_Locale">locale</translate>	
+	<translate id="MySettings_SaveButton">Save</translate>	
+	<translate id="MySettings_OldPassword">oldpassword</translate>	
+	<translate id="MySettings_NewPassword">newpassword</translate>	
+	<translate id="MySettings_ConfirmPassword">newpassword_check</translate>	
+	<translate id="MySettings_ChangePasswordBtn">Change password</translate>
+	<translate id="MySettings_EditUserInfoMsg">Personal data changed</translate>	
+	<translate id="MySettings_ChangePwdMsg">Your password was changed succesfully</translate>
+	<translate id="GuestUser_LoginName">login</translate>
+	<translate id="GuestUser_Password">password</translate>
+	<translate id="GuestUser_RepeatPassword">password2</translate>
+	<translate id="GuestUser_FirstName">firstName</translate>
+	<translate id="GuestUser_LastName">lastName</translate>	
+	<translate id="GuestUser_Email">email</translate>	
+	<translate id="GuestUser_AddUserData">doEditUser</translate>	
+	<translate id="GuestUser_LoginNameIllegalCharError">The Login Name contains invalid characters!</translate>
+	<translate id="GuestUser_EmailIllegalCharError">Email address format seems no good. Check domain(string after @). At least one dot (.) has to be present. Top Level Domain longer than 4 are not allowed.</translate>
+	<translate id="GuestUser_UserAlreadyExistError">Login/User name is already in use, please select another one.</translate>
+	</data>
+</root>

@@ -1,0 +1,88 @@
+<data>
+	<NewUser>
+		<Login>
+			<UserName>fruser</UserName>
+			<Password>fruser</Password>			
+		</Login>	
+		<TestOptions>
+			<Login>utilisateur001</Login>
+			<FName>prénom</FName>
+			<LName>nom</LName>
+			<Password>prénom</Password>
+			<Email>utilisateur001@yahoo.com</Email>
+			<Role>admin</Role>
+			<Locale>Français</Locale>
+			<AuthMethod>Default(DB)</AuthMethod>
+			<Active>true</Active>
+		</TestOptions>		
+	</NewUser>	
+	<FirstLogin>
+		<Login>
+			<UserName>utilisateur001</UserName>
+			<Password>prénom</Password>			
+		</Login>
+		<TestOptions>
+			<LoginName>utilisateur002</LoginName>
+			<Password>écouter</Password>
+			<RepeatPassword>écouter</RepeatPassword>
+			<FName>prénom</FName>
+			<LName>nom</LName>			
+			<Email>utilisateur002@yahoo.com</Email>			
+		</TestOptions>			
+	</FirstLogin>	
+	<EditInfo>
+		<Login>
+			<UserName>utilisateur001</UserName>
+			<Password>prénom</Password>				
+			<!--<UserName>samichou</UserName>
+			<Password>samicho</Password>	-->		
+		</Login>
+		<TestOptions>
+			<!--EditOption - First Name, Last Name, Email, 
+			Locale, Name (To edit first and last name), Email_Locale, Change Password, Personal Data -->
+			<EditOption>Personal Data</EditOption> 
+			<FName>FRprénom</FName>
+			<LName>FRnom</LName>			
+			<Email>frutilisateur001@yahoo.com</Email>
+			<Locale>Français</Locale>	
+			<OldPassword>prénom</OldPassword>
+			<NewPassword>prénom</NewPassword>
+			<ConfirmPassword>prénom</ConfirmPassword>		
+		</TestOptions>								
+	</EditInfo>	
+	<TestPlan>
+		<Login>
+			<UserName>samichou</UserName>
+			<Password>samichou</Password>			
+		</Login>	
+		<TestPlanDtl>
+			<TPName>SelTestPlan001</TPName>
+			<Description>This is sample test plan</Description>			
+			<Active>true</Active>
+		</TestPlanDtl>	
+		<TestSuite>
+			<TestSuiteDtl>
+				<TSName>SelTestSuite001</TSName>
+				<TSDetails>This is sample test suite</TSDetails>
+			</TestSuiteDtl>				
+			<TestCase>
+				<TCTitle>SelTestCase001</TCTitle>
+				<Summary>This is sample test case 001</Summary>	
+				<Preconditions></Preconditions>	
+				<Status>Draft</Status>
+				<Importance>Medium</Importance>
+				<Steps>Step to execute</Steps>
+				<ExpectedResult>Result</ExpectedResult>	
+			</TestCase>	
+			<TestCase>
+				<TCTitle>SelTestCase002</TCTitle>
+				<Summary>This is sample test case 002</Summary>	
+				<Preconditions></Preconditions>	
+				<Status>Draft</Status>
+				<Importance>High</Importance>
+				<Steps>Step to execute</Steps>
+				<ExpectedResult>Result</ExpectedResult>	
+			</TestCase>	
+		</TestSuite>	
+	</TestPlan>		
+</data>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TestLink]" parallel="tests">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="CreateNewUser(failed)" parallel="tests">
+    <classes>
+      <class name="com.advantage.tests.testLink.CreateNewUserTest">
+        <methods>
+          <include name="suiteInitialization"/>
+          <include name="suiteEnd"/>
+          <include name="initialization"/>
+          <include name="testEnd"/>
+          <include name="runCreateNewUser" invocation-numbers="0"/>
+          <include name="testIntiation"/>
+        </methods>
+      </class> <!-- com.advantage.tests.testLink.CreateNewUserTest -->
+    </classes>
+  </test> <!-- CreateNewUser(failed) -->
+</suite> <!-- Failed suite [TestLink] -->

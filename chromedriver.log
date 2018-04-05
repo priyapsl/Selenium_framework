@@ -1,0 +1,16 @@
+[0.000][INFO]:      ChromeDriver 26.0.1383.0 D:\BQA\Workspace_Samidha\advantage\lib\chromedriver.exe
+[1.128][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[1.129][INFO]:      Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --ignore-certificate-errors about:blank
+[3.750][INFO]:      Connected to Chrome successfully. Version: 34.0.1847.116
+[14.470][WARNING]:  Chrome still running, terminating...
+[14.470][INFO]:     Chrome shutdown
